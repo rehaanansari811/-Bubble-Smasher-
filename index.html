@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>🎮 Bubble Smasher 🚀</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Bubble Smasher</h1>
+        <div class="pannel">
+            <div class="ptop">
+                <div class="elem">
+                    <h3>Hit</h3>
+                    <div class="num hitval"></div>
+                </div>
+                <div class="elem">
+                    <h3>Score</h3>
+                    <div class="num scoreval">0</div>
+                </div>
+                <div class="elem">
+                    <h3>Timer</h3>
+                    <div class="num timerval"></div>
+                </div>
+            </div>
+            <div class="p-bottom" onclick="audio.play();">
+                <div class="bubble">
+                    <h4></h4>
+                </div>
+            </div>
+        </div>
+        <h6>By Rehaan Ansari with ❤️</h6>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        const audio = new Audio();
+        audio.src = "./assets/pop.mp3";
+    </script>
+</body>
+
+</html>

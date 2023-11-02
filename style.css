@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 197, 139, 0.823);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+#main>h1 {
+    color: #000000;
+    background-color: rgba(253, 157, 68, 0.864);
+    border: none;
+    padding: .4vw 3vw;
+    border-radius: 10px;
+
+}
+
+.pannel {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ptop {
+    background-color: rgba(253, 157, 68, 0.864);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.elem h3 {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.num {
+    /* padding: .5vw 1.1vw; */
+    background-color: #fff;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-bottom {
+    /* background-color: rgba(106, 105, 106, 0.53); */
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.bubble {
+    width: 4vw;
+    height: 4vw;
+    background-color: rgba(253, 157, 68, 0.864);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    transition: all ease .3s;
+}
+
+.bubble:hover {
+    background-color: orange;
+    cursor: pointer;
+    scale: 1.1;
+
+}
+
+.bubble h4 {
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+@media (max-width:680px) {
+    #main h1 {
+        padding: .5vw 3vw;
+        font-size: 2.5vw;
+    }
+
+    .pannel {
+        width: 90%;
+        height: 85%;
+    }
+
+    .ptop {
+        height: 60px;
+    }
+    .elem h3 {
+        font-size: 2.5vw;
+    }
+    .num {
+        width: 37px;
+        height: 32px;
+    }
+    .p-bottom {
+        height: calc(100% - 60px);
+        gap: 3vw;
+    }
+    .bubble {
+        width: 7vw;
+        height: 7vw;
+    }
+    .bubble h4 {
+        font-size: 2.2 vw;
+        font-weight: 500;
+    }
+}
+@media (max-width:450px) {
+    #main h1 {
+        padding: .5vw 3vw;
+        font-size: 2.5vh;
+    }
+
+    .pannel {
+        width: 90%;
+        height: 90%;
+    }
+
+    .ptop {
+        height: 60px;
+    }
+    .elem h3 {
+        font-size: 2.3vh;
+    }
+    .num {
+        width: 37px;
+        height: 32px;
+    }
+    .p-bottom {
+        height: calc(100% - 60px);
+        gap: 2vh;
+    }
+    .bubble {
+        width: 4.9vh;
+        height: 4.9vh;
+    }
+    .bubble h4 {
+        font-size: 2vh;
+        font-weight: 500;
+    }
+}
